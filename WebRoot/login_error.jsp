@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a>error</a> 
+<a>Login error!</a> 
 </body>
 </html>
