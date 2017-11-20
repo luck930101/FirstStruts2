@@ -1,8 +1,6 @@
 package myPackage;
 
-import java.lang.reflect.Executable;
 
-import freemarker.template.utility.Execute;
 
 public class LoginAction {
 	private String username;
@@ -23,6 +21,7 @@ public class LoginAction {
 	public void setPassword(String password){
 		this.password =password;
 	}
+	
 	private String execute() throws Exception {
 		String str ="login";
 		if(this.getUsername().equals("abc")&&this.getPassword().equals("123")){
