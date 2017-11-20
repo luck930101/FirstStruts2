@@ -1,8 +1,10 @@
 package myPackage;
 
 
-
-public class LoginAction {
+public class LoginAction  {
+	
+//    private static final long serialVersionUID = 1L;  
+    
 	private String username;
 	private String password;
 	
@@ -14,7 +16,7 @@ public class LoginAction {
 		return password;
 	}
 	
-	public void seUsername(String username){
+	public void setUsername(String username){
 		this.username =username;
 	}
 	
@@ -22,12 +24,17 @@ public class LoginAction {
 		this.password =password;
 	}
 	
-	private String execute() throws Exception {
-		String str ="login";
+	public String execute() throws Exception{
+		String str ="";
 		if(this.getUsername().equals("abc")&&this.getPassword().equals("123")){
-			str="succ";
+			str="success";
+		}
+		else{
+			str="error";
 		}
 		return str;
 
 	}
+	
+	
 }
